@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is the real time code collaboration app",
+  "license": "ISC",
+  "author": "Sai Kaushik",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "cd ../client && npm install && npm run build && cp -r build ../server/build",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "react-toastify": "^11.0.5",
+    "socket.io": "^4.8.3"
+  }
+}
